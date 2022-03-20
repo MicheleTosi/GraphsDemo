@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="it.micheletosi.graphsdemo">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.NoActionBar">
+        <activity android:name="it.micheletosi.graphsdemo.activities.chart.CandleStickChartActivity"></activity>
+        <activity android:name="it.micheletosi.graphsdemo.activities.chart.BubbleChartActivity" />
+        <activity android:name="it.micheletosi.graphsdemo.activities.chart.PieChartActivity" />
+        <activity android:name="it.micheletosi.graphsdemo.activities.chart.BarChartActivity" />
+        <activity android:name="it.micheletosi.graphsdemo.activities.InsertDataActivity" />
+        <activity android:name="it.micheletosi.graphsdemo.SelectionActivity" />
+        <activity android:name="it.micheletosi.graphsdemo.activities.chart.LineChartActivity" />
+        <activity android:name="it.micheletosi.graphsdemo.activities.chart.ScatterChartActivity" />
+        <activity android:name="it.micheletosi.graphsdemo.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>
